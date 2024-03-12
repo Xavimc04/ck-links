@@ -29,9 +29,23 @@ changeLanguage("en");
             </div>
         </article>
 
-        <Twitter />
+        <Twitter data-link="https://twitter.com/CristianflowO" />
         <Instagram />
         <Tiktok />
         <Twitch />
 	</section>
 </Template>
+
+<script>
+    document.addEventListener('click', function(e: any) {
+        console.log("awedawd")
+
+        if(e.target.tagName == 'button') {
+            e.preventDefault();
+
+            if(!e.target.dataset.link) return console.error('No link found');
+
+            window.open(e.target.dataset.link, '_blank');
+        }
+    })
+</script>
