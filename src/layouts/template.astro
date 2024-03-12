@@ -1,3 +1,9 @@
+---
+
+import { HeadHrefLangs } from "astro-i18next/components";
+
+---
+
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -5,8 +11,10 @@
 		<meta name="viewport" content="width=device-width" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" /> 
-		<meta name="generator" content={Astro.generator} />
+		<meta name="generator" content={ Astro.generator } />
 		<title>Cristiankinggg</title>
+
+        <HeadHrefLangs />
 	</head>
 
 	<body class="bg-zinc-950 h-screen">
