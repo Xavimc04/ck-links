@@ -41,6 +41,20 @@ npm run dev
 
 Enjoy it!
 
+## Translations
+
+Customizing translations
+
+1. Navigate to public folder
+2. Open locales folder
+3. Open translations.json and customite it
+
+Migrate translations 
+
+```
+npx astro-i18next generate
+```
+
 ## Developer
 
 Xavier Morell Campos
