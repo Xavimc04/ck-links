@@ -10,8 +10,7 @@ import { HeadHrefLangs, LanguageSelector } from "astro-i18next/components";
 		<link rel="icon" type="image/svg+xml" href="/images/profile.png" />
 		<meta name="viewport" content="width=device-width" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" /> 
-        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />  
 		<meta name="generator" content={ Astro.generator } />
 		<title>Cristiankinggg</title>
 
@@ -25,4 +24,22 @@ import { HeadHrefLangs, LanguageSelector } from "astro-i18next/components";
 
         <LanguageSelector showFlag={ true } class="absolute z-20 top-0 right-0 m-5 px-4 py-2 rounded bg-zinc-900 text-white border border-zinc-600" />
 	</body>
+
+	<style is:global>
+		html, body {
+			padding: 0;
+			margin: 0;
+		}
+
+		*::-webkit-scrollbar {
+			display: none;
+		}
+
+		* {
+			-ms-overflow-style: none; 
+			scrollbar-width: none; 
+			font-family: figtree; 
+			overflow-x: hidden;
+		}
+	</style>
 </html>
